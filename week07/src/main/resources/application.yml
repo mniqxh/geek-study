@@ -1,0 +1,28 @@
+dynamic:
+  dataSource:
+    type: simple
+
+geek:
+  hakaricp:
+    write:
+      driverClassName: com.mysql.jdbc.Driver
+      jdbcUrl: jdbc:mysql://192.168.56.2:3306/geek?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: Root@123456
+      minimumIdle: 10
+      maximumPoolSize: 50
+      connectionTimeout: 60000
+      validationTimeout: 30000
+      idleTimeout: 60000
+      maxLifetime: 1800000
+    read:
+      driverClassName: com.mysql.jdbc.Driver
+      jdbcUrl: jdbc:mysql://192.168.56.2:3306/geek1?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: Root@123456
+      minimumIdle: 10
+      maximumPoolSize: 50
+      connectionTimeout: 60000
+      validationTimeout: 30000
+      idleTimeout: 60000
+      maxLifetime: 1800000
